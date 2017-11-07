@@ -1,6 +1,6 @@
 {
   "name": "ilestis/laravel-elastic-email",
-  "description": "Package for send emails with attachments via elastic email driver",
+  "description": "Package for sending emails with attachments via elastic email driver",
   "keywords": [
     "laravel",
     "email",
@@ -14,7 +14,7 @@
     }
   ],
   "support": {
-    "email": "rdanusha@gmail.com"
+    "email": "jay@jpayne.ch"
   },
   "require": {
     "laravel/framework": "^5.5"
