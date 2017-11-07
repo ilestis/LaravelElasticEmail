@@ -1,6 +1,6 @@
 <?php
 
-namespace Rdanusha\LaravelElasticEmail;
+namespace ilestis\LaravelElasticEmail;
 
 use Illuminate\Mail\MailServiceProvider as LaravelMailServiceProvider;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace Rdanusha\LaravelElasticEmail;
+namespace ilestis\LaravelElasticEmail;
 
 use GuzzleHttp\ClientInterface;
 use Illuminate\Mail\Transport\Transport;
@@ -85,6 +85,8 @@ class ElasticTransport extends Transport
         if (is_array($attachments) && $count > 0) {
             $data = $this->attach($attachments, $data);
         }
+
+        // todo: move to guzzle
         $ch = curl_init();
 
         curl_setopt_array($ch, array(
@@ -117,7 +119,7 @@ class ElasticTransport extends Transport
     {
         if (is_array($attachments) && count($attachments) > 0) {
             $i = 1;
-            foreach ($attachments AS $attachment) {
+            foreach ($attachments as $attachment) {
                 $attachedFile = $attachment->getBody();
                 $fileName = $attachment->getFilename();
                 $ext = pathinfo($fileName, PATHINFO_EXTENSION);
@@ -166,6 +168,11 @@ class ElasticTransport extends Transport
         ];
     }
 
+    /**
+     * @param Swift_Mime_Message $message
+     * @param string $method
+     * @return string
+     */
     protected function getEmailAddresses(Swift_Mime_Message $message, $method = 'getTo')
     {
         $data = call_user_func([$message, $method]);

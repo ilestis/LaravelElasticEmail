@@ -1,6 +1,6 @@
 # Laravel Elastic Email #
 
-A Laravel wrapper for Elastic Email
+A Laravel 5.5 wrapper for Elastic Email
 
 Can send emails with multiple attachments
 
@@ -11,7 +11,7 @@ Can send emails with multiple attachments
 Install package via composer 
 
 ```bash
-composer require rdanusha/laravel-elastic-email
+composer require ilestis/laravel-elastic-email
 ```
 * Step 2
 
