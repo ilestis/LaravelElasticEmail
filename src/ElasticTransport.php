@@ -1,6 +1,6 @@
 <?php
 
-namespace ilestis\LaravelElasticEmail;
+namespace Ilestis\LaravelElasticEmail;
 
 use GuzzleHttp\ClientInterface;
 use Illuminate\Mail\Transport\Transport;

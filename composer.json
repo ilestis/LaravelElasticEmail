@@ -17,11 +17,11 @@
     "email": "jay@jpayne.ch"
   },
   "require": {
-    "laravel/framework": "^5.5"
+    "laravel/framework": "5.5.*"
   },
   "autoload": {
     "psr-4": {
-      "ilestis\\LaravelElasticEmail\\": "src/"
+      "Ilestis\\LaravelElasticEmail\\": "src/"
     }
   },
   "minimum-stability": "stable"

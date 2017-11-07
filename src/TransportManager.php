@@ -1,6 +1,6 @@
 <?php
 
-namespace ilestis\LaravelElasticEmail;
+namespace Ilestis\LaravelElasticEmail;
 
 use Illuminate\Mail\TransportManager as LaravelTransportManager;
 
